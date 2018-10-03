@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TopChef.pk-Patients Menus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/kababjees.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="./assets/JS/main.js"></script>
+    <script src="./assets/JS/view.js"></script>
+    <script>
+        $(document).ready(function() {
+            getWeeklyPatientsBreakfastMenus();
+            $("a").click(function() {
+                if (event.target.id == 'breakfast') {
+                    getWeeklyPatientsBreakfastMenus();
+                    $('#dinner').removeClass("active");
+                    $('#lunch').removeClass("active");
+                    $('#breakfast').addClass("active");
+                }
+                if (event.target.id == 'lunch') {
+                    getWeeklyPatientsLunchMenus();
+                    $('#breakfast').removeClass("active");
+                    $('#dinner').removeClass("active");
+                    $('#lunch').addClass("active");
+                }
+                if (event.target.id == 'dinner') {
+                    getWeeklyPatientsDinnerMenus();
+                    $('#lunch').removeClass("active");
+                    $('#breakfast').removeClass("active");
+                    $('#dinner').addClass("active");
+                }
+                if (event.target.id == 'Monthly') {
+                    getWeeklyPatientsMonthlyMenus();
+                    $('#lunch').removeClass("active");
+                    $('#breakfast').removeClass("active");
+                    $('#Monthly').addClass("active");
+                }
+                //changeHeaderBackground();
+            });
+        });
+    </script>
+    <!-- Custom stlylesheet -->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./home.html">TopChef.pk</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+
+    </div>
+    <div style="height:40vh;background-color: transparent;color:white;text-align: center">
+
+    </div>
+    <div class="container-fluid wrapper">
+        <h2 class="text-center" , style="font-family:'Lucida Calligraphy',cursive">Meals For Patients</h2>
+        <div class="row sticky-top mobile-view-menu" style="background-color: transparent !important;">
+
+            <table style="width:50%; margin:auto; background-color:white;">
+                <tr>
+                    <td style="width:30%; text-align: left;">
+                        <a class="nav-link custom-link active" id="breakfast" href="JavaScript:void(0);">BreakFast Deals</a>
+                    </td>
+                    <td style="width:25%; text-align: left;">
+                        <a class="nav-link custom-link" id="lunch" href="JavaScript:void(0);">Lunch Deals</a>
+                    </td>
+                    <td style="text-align: left;">
+                        <a class="nav-link custom-link" id="dinner" href="JavaScript:void(0);">Dinner Deals</a>
+                    </td>
+                    <td style="text-align: left;">
+                        <a class="nav-link custom-link" id="Monthly" href="JavaScript:void(0);">Monthly Picks
+                        </a>
+                </tr>
+            </table>
+
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:80%; text-align: right; padding-right:1em;">
+                    </td>
+                    <td style="width:20%; text-align: right;">
+                        <button href="#" type="button" class="btn btn-info">Create your own menu</button>
+                        <!-- <a class="nav-link custom-link" id="vendor" href="#vendor-menu">Caterers By Choice</a> -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="row" style="text-align:center;" id="patientsmenus">
+
+        </div>
+        <a href="./quote.html" class="float">
+            <img src="./quote.png" style="height:100%;width:20%;margin-top:3px;">
+            <i class="fa fa-plus my-float">Request For Quote</i>
+        </a>
+</body>
+
+</html>

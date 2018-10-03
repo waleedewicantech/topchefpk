@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TopChef.pk-Catering</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="./assets/JS/main.js"></script>
+    <script src="./assets/JS/view.js"></script>
+    <script>
+        $(document).ready(function() {
+            getStandardCateringMenus();
+            getVendorsListForCatering();
+            $("a").click(function() {
+                if (event.target.id == 'standard') {
+                    $('#vendor').removeClass("active");
+                    $('#standard').addClass("active");
+                }
+                if (event.target.id == 'vendor') {
+                    $('#standard').removeClass("active");
+                    $('#vendor').addClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/kababjees.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./home.html">TopChef.pk</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+
+    </div>
+    <div class="header-top" style="">
+
+    </div>
+    <div class="container-fluid wrapper">
+        <h2 class="text-center" , style="font-family:'Lucida Calligraphy',cursive">Catering</h2>
+        <div class="row sticky-top">
+            <table style="width:100%;" class="mobile-view-menu">
+                <tr>
+                    <td style="width:40%; text-align: right; padding-right:1em;">
+                        <a class="nav-link custom-link" id="standard" href="#standard-menu">Standard</a>
+                    </td>
+                    <td style="width:50%; text-align: left;">
+                        <a class="nav-link custom-link" id="vendor" href="#vendor-menu">Caterers By Choice</a>
+                    </td>
+                </tr>
+            </table>
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:80%; text-align: right; padding-right:1em;">
+                    </td>
+                    <td style="width:20%; text-align: right;">
+                        <button id="custom-menu-btn" type="button" class="btn btn-info">Create your own menu</button>
+                        <!-- <a class="nav-link custom-link" id="vendor" href="#vendor-menu">Caterers By Choice</a> -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+        <div class="row" style="text-align:center;">
+            <div class="col-sm-7 segment" id="standard-menu">
+            </div>
+            <div class="col-sm-4 segment" id="vendor-menu">
+                <h4 style="font-family:'Lucida Calligraphy',cursive">Caterers By Choice</h4>
+                <div class="row">
+                    <table style="width:100%" id="vendor-menu-list">
+                        <tr>
+                            <td>
+                                <img src=".\img\kababjees.jpg" class="rounded-circle" ,alt="kababjees" style="width:90%">
+                                <h6 style="font-family:'Lucida Calligraphy',cursive" , class="title"><a class="vendor-link" href="kababjees.html">Kababjees</a></h6>
+                            </td>
+                            <td>
+                                <img src=".\img\alhabib.png" class="rounded-circle" , alt="alhabib" style="width:90%">
+                                <h6 style="font-family:'Lucida Calligraphy',cursive" , class="title"><a class="vendor-link" href="alhabib.html">Al Habib</a></h6>
+                            </td>
+                            <td>
+                                <img src=".\img\hr1.jpg" class="rounded-circle" , alt="hr" style="width:90%">
+                                <h6 style="font-family:'Lucida Calligraphy',cursive" , class="title"><a class="vendor-link" href="hr.html">Hanif Rajput</a></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src=".\img\bbq.png" class="rounded-circle" , alt="bbq" style="width:90%">
+                                <h6 style="font-family:'Lucida Calligraphy',cursive" , class="title"><a class="vendor-link" href="bbq.html">BBQ Tonight</a></h6>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="./quote.html" class="float">
+        <img src="./quote.png" style="height:100%;width:20%;margin-top:3px;">
+        <i class="fa fa-plus my-float">Request For Quote</i>
+    </a>
+</body>
+
+</html>

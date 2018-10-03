@@ -1,0 +1,105 @@
+.background-static {
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../img/static/tc-main.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    position: fixed;
+    top: 0;
+}
+
+.Welcome-Text {
+    margin-top: 40vh;
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    font-size: 4em;
+    font-family: 'Lucida Calligraphy', cursive;
+}
+
+#caption {
+    margin-top: -1em;
+    font-size: 0.3em;
+    color: whitesmoke;
+    padding-bottom: 1em;
+}
+
+.mission {
+    margin-top: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 2em;
+    color: white;
+    background-color: rgba(145, 7, 7, 0.8);
+}
+
+.option-container {
+    margin-top: 90vh;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-bottom: 5em;
+}
+
+.header {
+    width: 8em;
+    padding: 0.2em;
+    text-align: center;
+    margin: auto;
+    font-size: 2.7em;
+    font-weight: 700;
+    background-color: darkred;
+}
+
+.option {
+    background-color: darkred;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.container {
+    margin-top: 2em;
+}
+
+.row {
+    margin-top: 0.8em !important;
+}
+
+.mission p {
+    padding: 1em;
+    margin: auto;
+    border: 1px solid white;
+    width: 80%;
+    border-radius: 1em;
+}
+
+.option a {
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: darkred !important;
+    font-weight: 600;
+}
+
+.navbar-dark .navbar-brand {
+    color: darkred;
+}
+
+.bg-dark {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.gapper {
+    margin-top: 20vh;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../img/static/navbar-btn.png') !important;
+}

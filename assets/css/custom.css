@@ -1,0 +1,26 @@
+h4.modal-title {
+    color: white;
+}
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 1.75rem auto;
+}
+
+.modal-header {
+    background-color: brown;
+}
+
+.table th {
+    background-color: rgb(212, 76, 76);
+    color: white;
+}
+
+.table {
+    color: brown;
+}
+
+.table-monthly td:nth-child(1) {
+    background-color: rgb(212, 76, 76);
+    color: white;
+}

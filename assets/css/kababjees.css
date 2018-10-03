@@ -1,0 +1,240 @@
+.header {
+    height: 45vh;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../img/static/kakb.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: 100% 50%;
+    position: fixed;
+    top: 3em;
+}
+
+#vendor-menu {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.vendor-link {
+    color: white;
+    display: block;
+    font-weight: 600;
+    margin: 0.6em;
+}
+
+.header-top {
+    height: 35vh;
+    background-color: transparent;
+    color: white;
+    text-align: center
+}
+
+body {
+    background: linear-gradient(120deg, darkred, black);
+}
+
+.border {
+    display: inline-block;
+    width: 85%;
+    margin: 2em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Calligraphy', cursive;
+    padding: 25px;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Lucida Calligraphy', cursive;
+    color: white;
+}
+
+.btn-info {
+    background-color: white;
+    color: black;
+}
+
+button {
+    color: black;
+    font-family: 'Lucida Calligraphy', cursive;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.wrapper {
+    color: white;
+    background: linear-gradient(120deg, darkred, black);
+    padding-bottom: 7em;
+}
+
+.segment {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2em;
+    margin: 0.2em;
+}
+
+.card-title {
+    font-weight: 700;
+    color: darkred;
+}
+
+.card {
+    color: darkred;
+    background-color: white;
+    border: 2.3px solid darkred;
+    border-radius: 0.6em;
+    text-align: left;
+    margin: 2em;
+}
+.saad {
+        color: darkred;
+        background-color: white;
+        border: 2.3px solid darkred;
+        border-radius: 0.6em;
+        text-align: right;
+        margin: 2em;
+}
+
+.card-text {}
+
+.underline-menu {
+    border-bottom: 0.2em solid brown;
+}
+
+.float {
+    position: fixed;
+    width: 14em;
+    height: 4em;
+    bottom: 40px;
+    right: 40px;
+    background-color: white;
+    color: red;
+    border-radius: 0.2em;
+    text-align: center;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.my-float {
+    font-weight: 900;
+    color: darkred;
+}
+
+.custom-link {
+    color: darkred;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    text-decoration: none !important;
+    font-size: 1em;
+}
+
+.active {
+    color: darkred !important;
+    font-size: 1.3em !important;
+    text-decoration: underline !important;
+}
+
+.mobile-view-menu {
+    background-color: white;
+}
+
+.pick-menu-segment {
+    width: 50%;
+}
+
+.item-head {
+    font-weight: 800;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgb(231, 84, 108);
+}
+
+.events {
+    width: 100%;
+    text-align: center;
+    padding: 4em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    color: darkred;
+    font-weight: 700;
+    background-image: url('../img/static/event-bg.jpg');
+}
+
+.events-details {
+    margin-top: 5em;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    color: white;
+    font-weight: 500;
+}
+
+#events-catalogue {
+    margin-top: 4em;
+    background-image: url('./events-bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.custom-card {
+    border: 2px solid white;
+    border-radius: 1em;
+    margin: 2em;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.custom-card h4 {
+    margin-top: 1em;
+}
+
+.custom-card img {
+    margin-top: 1em;
+}
+
+.custom-card p {
+    color: white !important;
+    margin: 1em;
+}
+
+.img-btn {
+    width: 10em;
+    margin-bottom: 3em;
+}
+
+a.href-btn {
+    display: block;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: brown!important;
+    font-weight: 600;
+    margin-top: 1px;
+}

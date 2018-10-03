@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./customMenu.css">
+    <link rel="stylesheet" href="./quote.css">
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./home.html">TopChef.pk</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./home.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="welcome-text" style="margin-top:2em;">Your Requested Menus</h2>
+            </div>
+            <div class="col-sm-8 offset-sm-2">
+                <div class="">
+                    <table class="footer cart-container" id="myMenu">
+                        <tr>
+                            <th></th>
+                            <th class="header-cell" style="width:65%;">Menus</th>
+                            <th class="header-cell middle-cell">Persons</th>
+                            <th class="header-cell">Estimated Cost</th>
+                        </tr>
+                        <!-- <tr class="footer">
+                            <td></td>
+                            <td style="padding:0.5em;"></td>
+                            <td class="middle-cell"></td>
+                            <td><b id="total">500</b></td>
+                        </tr> -->
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="action-message">We do need your contact details to reach back to you</h4>
+        <div class="row options-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 form-line">
+                        <div class="form-group">
+                            <label for="exampleInputUsername">Your name</label>
+                            <input type="text" class="form-control" id="contact-name" placeholder=" Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail">Email Address</label>
+                            <input type="email" class="form-control" id="contact-email" placeholder=" Enter Email id">
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Mobile No.</label>
+                            <input type="tel" class="form-control" id="contact-phone" placeholder=" Enter 10-digit mobile no.">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="description"> Additional Message</label>
+                            <textarea class="form-control" id="contact-msg" placeholder="Enter Any additional detailsyou would like to ask"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <button type="button" id="request-cart" class="btn-default btn-main-submit">  Request Quote</button>
+            </div>
+        </div>
+    </div>
+    <script src="./quote.js"></script>
+</body>
+
+</html>

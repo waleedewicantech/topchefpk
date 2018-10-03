@@ -1,0 +1,54 @@
+body {
+    color: darkred;
+}
+
+.welcome-text {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.action-message {
+    margin-top: 10vh;
+    text-align: center;
+    border-bottom: 0.1em solid darkred;
+    padding-bottom: 0.6em;
+}
+
+.label-text {
+    font-weight: 700;
+    padding: 1em;
+}
+
+select.form-control {
+    color: darkred;
+    font-weight: 500;
+}
+
+.custom-menu-container {
+    border: darkred 0.2em solid;
+    margin: 0.7em auto;
+    padding: 0.3em;
+}
+
+.btn-custom {
+    color: darkred;
+    background-color: white;
+    border: darkred 2px solid;
+}
+
+.btn-main-submit {
+    color: white;
+    background-color: darkred;
+    font-size: 1.5em;
+    padding: 0.2em;
+    border: 0.2em solid darkred;
+    border-radius: 0.2em;
+    margin: 2em auto;
+}
+
+.options-container {
+    background-color: bisque;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    text-align: center;
+}

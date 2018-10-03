@@ -1,0 +1,35 @@
+﻿body {
+    text-align: center;
+}
+
+.cart-container {
+    margin-top: 2em;
+    background-color: bisque;
+}
+
+.header-cell {
+    padding: 0.5em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+.middle-cell {
+    width: 15%;
+    border-right: 1px solid;
+    border-left: 1px solid brown;
+}
+
+.footer {
+    border: 1px solid brown;
+}
+
+.invisible-textbox {
+    background: bisque;
+    border: none;
+    text-align: center;
+}
+
+.menu-remover {
+    padding-left: 1em;
+    font-weight: 700;
+}

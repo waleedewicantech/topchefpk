@@ -1,0 +1,2 @@
+[28-Apr-2018 20:31:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/topchef/public_html/api/constants.php:1) in /home/topchef/public_html/api/router.php on line 31
+[01-May-2018 09:37:00 UTC] PHP Notice:  Undefined index: menu in /home/topchef/public_html/api/router.php on line 45
