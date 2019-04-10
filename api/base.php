@@ -1,13 +1,18 @@
+
+
 <?php
+
+
+
 class ApiBase{
 
-    private $user = 'root';//"topchef_dbadmin";
+    private $user = 'topchef_dbadmin';//"topchef_dbadmin";
 
     private $servername = "localhost";
 
-    private $pass = 'click123';//"administr@tor";
+    private $pass = 'administr@tor';//"administr@tor";
 
-    private $db = "topchef";//topchef_master
+    private $db = "topchef_master";//topchef_master
 
     protected $conn = null;
 
@@ -187,3 +192,7 @@ class ApiBase{
     }
 
 }
+
+
+
+?>
